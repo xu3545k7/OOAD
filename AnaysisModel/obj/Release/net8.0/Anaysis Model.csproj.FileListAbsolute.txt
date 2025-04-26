@@ -1,0 +1,30 @@
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\appsettings.Development.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\appsettings.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.staticwebassets.runtime.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.exe
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.deps.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.runtimeconfig.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\bin\Release\net8.0\Anaysis Model.pdb
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.AssemblyInfoInputs.cache
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.AssemblyInfo.cs
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.csproj.CoreCompileInputs.cache
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.RazorAssemblyInfo.cache
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.RazorAssemblyInfo.cs
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets\msbuild.Anaysis Model.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets\msbuild.build.Anaysis Model.props
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.Anaysis Model.props
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.Anaysis Model.props
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\scopedcss\bundle\Anaysis Model.styles.css
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\scopedcss\projectbundle\Anaysis Model.bundle.scp.css
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\refint\Anaysis Model.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.pdb
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\Anaysis Model.genruntimeconfig.cache
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\Anaysis Model\obj\Release\net8.0\ref\Anaysis Model.dll

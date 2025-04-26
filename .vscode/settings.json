@@ -1,0 +1,10 @@
+{
+    "dotnet.defaultSolution": "AnaysisModelApplication.sln",
+    "files.associations": {
+        "*.cs": "csharp",
+        "*.csproj": "xml"
+    },
+    "editor.formatOnSave": true,
+    "omnisharp.useModernNet": true,
+    "csharp.suppressHiddenDiagnostics": true
+}
