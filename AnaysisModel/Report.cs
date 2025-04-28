@@ -15,7 +15,7 @@ namespace AnaysisModel
             {
                 summary += $"{Strategies[i].GetDetails()}\n" +
                            $"- Growth Potential: {GrowthPredictions[i].GetPrediction()}%\n" +
-                           $"- Predicted ROI: {ROIPredictions[i].GetPrediction()}\n\n";
+                           $"- Predicted ROI: {ROIPredictions[i].GetPrediction()}%\n\n";
             }
             return summary;
         }

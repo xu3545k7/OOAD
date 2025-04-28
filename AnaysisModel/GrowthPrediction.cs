@@ -11,5 +11,7 @@ namespace AnaysisModel
         {
             return Percentage;
         }
+
+        
     }
 }
