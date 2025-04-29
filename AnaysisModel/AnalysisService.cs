@@ -48,11 +48,19 @@ namespace AnaysisModel
                     // todo : 這裡需要根據額外需求來growth的預測
                 }
 
-                var growth = _analysisModule.CalculateGrowthPotential(strategy, strategy.GethistoricalCost(), strategy.Gethistoricalheadcount());
+                // 將用戶輸入的數據添加到策略的歷史數據中
+                List<float> historicalCost = strategy.GethistoricalCost();
+                historicalCost.Add(cost);
+                List<int> historicalheadcount = strategy.Gethistoricalheadcount();
+                historicalheadcount.Add(headcount);
+                List<float> historicalROI = strategy.GethistoricalROI();
+                historicalROI.Add(roi);
+
+                var growth = _analysisModule.CalculateGrowthPotential(strategy, historicalCost, strategy.historicalheadcount);
                 growthPredictions.Add(growth);
 
 
-                var predictedROI = _predictionEngine.PredictROI(strategy, growth, strategy.GethistoricalROI());
+                var predictedROI = _predictionEngine.PredictROI(strategy, growth, historicalROI);
                 roiPredictions.Add(predictedROI);
             }
 
