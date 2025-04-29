@@ -1,6 +1,5 @@
 using System;
 using System.Drawing;
-using Groq;
 using static alglib;
 namespace AnaysisModel
 {
