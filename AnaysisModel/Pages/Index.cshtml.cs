@@ -24,7 +24,7 @@ namespace AnaysisModel.Pages
 
         public void OnPost()
         {
-            Report = _analysisService.AnalyzeStrategies(Cost, Headcount, ROI);
+            Report = _analysisService.AnalyzeStrategies(Cost, Headcount, ROI, "");
         }
     }
 }

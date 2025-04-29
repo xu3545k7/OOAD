@@ -1,32 +1,42 @@
-using AnaysisModel;
-
+using System;
+using System.Drawing;
+using Groq;
+using static alglib;
 namespace AnaysisModel
 {
     public class AnalysisModule
     {
-        public GrowthPrediction CalculateGrowthPotential(Strategy strategy, float cost, int headcount)
+        private readonly PredictionEngine predictionEngine = new PredictionEngine();
+        public GrowthPrediction CalculateGrowthPotential(Strategy strategy, List<float> historicalCost, List<int> historicalheadcount)
         {
-            float percentage;
-            ROIPrediction roiPrediction = new ROIPrediction();
-            float[] historicalROI = roiPrediction.GethistoricalROI();
+            // 初始值
+            float percentage = 0f;
+
             // 根據策略計算成長潛力百分比
-            
-            if (historicalROI == null || historicalROI.Length == 0)
-            {
-                // 如果 historicalROI 為 null 或空陣列，則設置一個默認值
-                historicalROI = new float[] { 0f }; // 假設 ROI 為 0%
-            }
+            float cost = historicalCost[historicalCost.Count - 1];
+            float headcount = historicalheadcount[historicalheadcount.Count - 1];
+
+
+
             if (strategy.Description == "Increase Marketing Budget")
             {
                 // 假設增加市場預算，cost 的影響較大
-                float costImpact  = cost * (1 + historicalROI[0] / 100);
-                float headcountImpact = headcount * (1 + historicalROI[0] / 100);
-                percentage = (costImpact - cost) + (headcountImpact - headcount) * 0.1f;
+                float costImpact = predictionEngine.GrowthModel(historicalCost);
+                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
+                percentage = (cost - costImpact) * 0.001f + (headcountImpact - headcount) * 0.3f;
             }
             else if (strategy.Description == "Optimize Operations")
             {
                 // 假設優化運營，cost 的影響較小
-                percentage = headcount * 0.1f / 100;
+                float costImpact = predictionEngine.GrowthModel(historicalCost);
+                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
+                percentage = (cost - costImpact) * 0.0005f + (headcountImpact - headcount) * 0.5f;
+            }
+            else if (strategy.Description == "With Additional Requirement")
+            {
+                float costImpact = predictionEngine.GrowthModel(historicalCost);
+                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
+                percentage = (cost - costImpact) * 0.002f + (headcountImpact - headcount) * 0.4f;
             }
             else
             {
@@ -39,5 +49,7 @@ namespace AnaysisModel
                 Percentage = percentage
             };
         }
+
+
     }
 }

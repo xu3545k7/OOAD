@@ -6,11 +6,15 @@ C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\AnaysisModel
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\AnaysisModel.runtimeconfig.json
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\AnaysisModel.dll
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\AnaysisModel.pdb
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\Groq.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.csproj.AssemblyReference.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.csproj.CoreCompileInputs.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.RazorAssemblyInfo.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.RazorAssemblyInfo.cs
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.sourcelink.json
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\staticwebassets\msbuild.AnaysisModel.Microsoft.AspNetCore.StaticWebAssets.props
@@ -21,9 +25,9 @@ C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\staticwebass
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\scopedcss\bundle\AnaysisModel.styles.css
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\scopedcss\projectbundle\AnaysisModel.bundle.scp.css
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisM.1855DCD7.Up2Date
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.dll
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\refint\AnaysisModel.dll
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.pdb
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.genruntimeconfig.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\ref\AnaysisModel.dll
-C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.sourcelink.json
