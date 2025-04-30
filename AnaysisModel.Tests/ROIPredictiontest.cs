@@ -49,5 +49,37 @@ namespace AnaysisModel.Tests
             // Assert
             Assert.Equal(new float[] { 10.0f, 12.5f, 15.2f }, result);
         }
+
+        [Fact]
+        public void PredictROI_ShouldReturnNonZeroValue()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var strategy = new Strategy { Id = 1, Description = "Strategy 1" };
+            var growthPrediction = new GrowthPrediction { Percentage = 15.0f };
+            var historicalROI = new List<float> { 5.0f, 6.8f, 7.5f, 8.7f, 10.2f };
+
+            // Act
+            var result = predictionEngine.PredictROI(strategy, growthPrediction, historicalROI);
+
+            // Assert
+            Assert.Equal(11.3299999f, result.GetPrediction());
+        }
+
+        [Fact]
+        public void PredictROI_ShouldReturnZeroValue()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var strategy = new Strategy { Id = 1, Description = "Strategy 1" };
+            var growthPrediction = new GrowthPrediction { Percentage = 15.0f };
+            var historicalROI = new List<float> { 5.0f };
+
+            // Act
+            var result = predictionEngine.PredictROI(strategy, growthPrediction, historicalROI);
+
+            // Assert
+            Assert.Equal(0.0f, result.GetPrediction());
+        }
     }
 }

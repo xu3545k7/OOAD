@@ -47,5 +47,35 @@ namespace AnaysisModel.Tests
             // Assert
             Assert.Equal(50, result);
         }
+
+        [Fact]
+        public void PredictGrowth_Value()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var historicalData = new List<float> { 170000, 175000, 172000, 179000, 180000 };
+
+
+            // Act
+            var result = predictionEngine.GrowthModel(historicalData);
+
+            // Assert
+            Assert.Equal(182400.0f, result);
+        }
+
+        [Fact]
+        public void PredictGrowth_Valuezero()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var historicalData = new List<float> { 170000 };
+
+
+            // Act
+            var result = predictionEngine.GrowthModel(historicalData);
+
+            // Assert
+            Assert.Equal(0.0f, result);
+        }
     }
 }
