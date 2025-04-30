@@ -34,6 +34,7 @@ namespace AnaysisModel.Tests
             Assert.Equal(1000f, result);
         }
 
+
         [Fact]
         public void Headcount_SetAndGet_ReturnsExpectedValue()
         {
@@ -76,6 +77,36 @@ namespace AnaysisModel.Tests
 
             // Assert
             Assert.Equal(0.0f, result);
+        }
+
+        [Fact]
+        public void PredictGrowthINT_Valuezero()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var historicalData = new List<int> { 2 };
+
+
+            // Act
+            var result = predictionEngine.GrowthIntegerModel(historicalData);
+
+            // Assert
+            Assert.Equal(0, result);
+        }
+
+        [Fact]
+        public void PredictGrowthINT_Value()
+        {
+            // Arrange
+            var predictionEngine = new PredictionEngine();
+            var historicalData = new List<int> { 2, 3, 4, 5, 6 };
+
+
+            // Act
+            var result = predictionEngine.GrowthIntegerModel(historicalData);
+
+            // Assert
+            Assert.Equal(6, result);
         }
     }
 }

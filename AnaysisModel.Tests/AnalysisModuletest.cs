@@ -69,5 +69,14 @@ namespace AnaysisModel.Tests
 
             Assert.Equal(1.10000002f, result.Percentage); // 根據邏輯檢查百分比是否正確
         }
+
+        [Fact]
+        public void CalculateGrowthPotential_ShouldThrowException_WhenStrategyDescriptionIsNull()
+        {
+            var module = new AnalysisModule();
+            var strategy = new Strategy { Description = null };
+            Assert.Throws<ArgumentNullException>(() =>
+                module.CalculateGrowthPotential(strategy, new List<float> { 1f, 50f, 100f }, new List<int> { 1, 5, 10 }));
+        }
     }
 }
