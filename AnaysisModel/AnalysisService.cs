@@ -4,8 +4,15 @@ namespace AnaysisModel
 {
     public class AnalysisService
     {
-        private readonly AnalysisModule _analysisModule = new AnalysisModule();
-        private readonly PredictionEngine _predictionEngine = new PredictionEngine();
+        private readonly IAnalysisModule _analysisModule;
+        private readonly IPredictionEngine _predictionEngine;
+
+        // 新增建構函式，接受依賴
+        public AnalysisService(IAnalysisModule analysisModule, IPredictionEngine predictionEngine)
+        {
+            _analysisModule = analysisModule ?? throw new ArgumentNullException(nameof(analysisModule));
+            _predictionEngine = predictionEngine ?? throw new ArgumentNullException(nameof(predictionEngine));
+        }
 
         // 暫時取代資料庫的部分
         private readonly List<float> historicalCost_Increase_Marketing_Budget = new List<float> { 170000, 175000, 172000, 179000, 180000 };
@@ -20,7 +27,7 @@ namespace AnaysisModel
 
 
 
-        public Report AnalyzeStrategies(float cost, int headcount, float roi, String additional_requirement)
+        public virtual Report AnalyzeStrategies(float cost, int headcount, float roi, String additional_requirement)
         {
             var strategies = new List<Strategy>
             {

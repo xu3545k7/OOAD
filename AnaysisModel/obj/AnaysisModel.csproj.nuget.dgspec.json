@@ -54,6 +54,10 @@
             "Groq": {
               "target": "Package",
               "version": "[0.0.0-dev.6, )"
+            },
+            "alglib.net": {
+              "target": "Package",
+              "version": "[3.19.0, )"
             }
           },
           "imports": [

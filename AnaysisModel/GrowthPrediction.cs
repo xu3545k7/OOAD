@@ -6,10 +6,10 @@ namespace AnaysisModel
     public class GrowthPrediction
     {
 
-        public float cost { get; set; }
-        public int headcount { get; set; }
-        public float Percentage { get; set; }
-        public float GetPrediction()
+        public virtual float cost { get; set; }
+        public virtual int headcount { get; set; }
+        public virtual float Percentage { get; set; }
+        public virtual float GetPrediction()
         {
             return Percentage;
         }

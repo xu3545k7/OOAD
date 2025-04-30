@@ -9,10 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\alglib-csharp\lib-csharp-core\src\**\*.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="alglib.net" Version="3.19.0" />
     <PackageReference Include="Groq" Version="0.0.0-dev.6" />
   </ItemGroup>
 </Project>

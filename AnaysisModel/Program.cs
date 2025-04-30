@@ -13,8 +13,12 @@ namespace AnaysisModel
             // Add services to the container.
             builder.Services.AddRazorPages();
 
+
             // Register AnalysisService as a dependency
             builder.Services.AddSingleton<AnalysisService>();
+            builder.Services.AddSingleton<IAnalysisModule, AnalysisModule>();
+            builder.Services.AddSingleton<IPredictionEngine, PredictionEngine>();
+
 
             var app = builder.Build();
 

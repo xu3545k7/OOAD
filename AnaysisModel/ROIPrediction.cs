@@ -2,14 +2,14 @@ namespace AnaysisModel
 {
     public class ROIPrediction
     {
-        public float Value { get; set; }
-        public float[] historicalROI { get; set; }
-        public float GetPrediction()
+        public virtual float Value { get; set; }
+        public virtual float[] historicalROI { get; set; }
+        public virtual float GetPrediction()
         {
             return Value;
         }
 
-        public float[] GethistoricalROI()
+        public virtual float[] GethistoricalROI()
         {
             return historicalROI;
         }

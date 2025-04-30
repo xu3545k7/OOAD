@@ -31,3 +31,4 @@ C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\refint\Anays
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.pdb
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\AnaysisModel.genruntimeconfig.cache
 C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\obj\Debug\net8.0\ref\AnaysisModel.dll
+C:\Users\Ruix-Xuan Rao\Documents\OOAD\AnaysisModel\bin\Debug\net8.0\alglib.net.dll

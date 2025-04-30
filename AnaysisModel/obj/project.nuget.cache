@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i6zgZtNOLNU=",
+  "dgSpecHash": "szecQDadQsc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Ruix-Xuan Rao\\Documents\\OOAD\\AnaysisModel\\AnaysisModel.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ruix-Xuan Rao\\.nuget\\packages\\alglib.net\\3.19.0\\alglib.net.3.19.0.nupkg.sha512",
     "C:\\Users\\Ruix-Xuan Rao\\.nuget\\packages\\groq\\0.0.0-dev.6\\groq.0.0.0-dev.6.nupkg.sha512",
     "C:\\Users\\Ruix-Xuan Rao\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Ruix-Xuan Rao\\.nuget\\packages\\system.text.json\\8.0.4\\system.text.json.8.0.4.nupkg.sha512"

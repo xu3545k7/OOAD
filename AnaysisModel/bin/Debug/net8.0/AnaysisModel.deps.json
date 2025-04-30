@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v8.0": {
       "AnaysisModel/1.0.0": {
         "dependencies": {
-          "Groq": "0.0.0-dev.6"
+          "Groq": "0.0.0-dev.6",
+          "alglib.net": "3.19.0"
         },
         "runtime": {
           "AnaysisModel.dll": {}
+        }
+      },
+      "alglib.net/3.19.0": {
+        "runtime": {
+          "lib/net7.0/alglib.net.dll": {
+            "assemblyVersion": "3.19.0.0",
+            "fileVersion": "3.19.0.0"
+          }
         }
       },
       "Groq/0.0.0-dev.6": {
@@ -44,6 +53,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "alglib.net/3.19.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWYQYLOvkw+EcciexaCcfBoekxV+YMaOfjJC9luIA7HJVntUvj4YTwJfWdPXJRVvnacAIkV0c94t61G771voqA==",
+      "path": "alglib.net/3.19.0",
+      "hashPath": "alglib.net.3.19.0.nupkg.sha512"
     },
     "Groq/0.0.0-dev.6": {
       "type": "package",

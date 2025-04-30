@@ -5,11 +5,11 @@ namespace AnaysisModel
         public int Id { get; set; }
         public string Description { get; set; }
 
-        public List<float> historicalCost { get; set; } = new List<float>();
+        public virtual List<float> historicalCost { get; set; } = new List<float>();
 
-        public List<int> historicalheadcount { get; set; } = new List<int>();
+        public virtual List<int> historicalheadcount { get; set; } = new List<int>();
 
-        public List<float> historicalROI { get; set; } = new List<float>();
+        public virtual List<float> historicalROI { get; set; } = new List<float>();
 
         public void AddHistoricalData(float cost, int headcount, float roi)
         {
