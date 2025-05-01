@@ -1,4 +1,4 @@
-namespace AnaysisModel
+namespace AnaysisModel.Model
 {
     public class Strategy
     {

@@ -1,6 +1,7 @@
 using static alglib;
+using AnaysisModel.Interfaces;
 
-namespace AnaysisModel
+namespace AnaysisModel.Model
 {
     public class PredictionEngine : IPredictionEngine
     {

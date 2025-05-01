@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AnaysisModel.Interfaces;
+using AnaysisModel.Model;
 
 namespace AnaysisModel
 {
@@ -15,8 +17,9 @@ namespace AnaysisModel
 
 
             // Register AnalysisService as a dependency
-            builder.Services.AddSingleton<AnalysisService>();
+            builder.Services.AddSingleton<IAnalysisService, AnalysisService>();
             builder.Services.AddSingleton<IAnalysisModule, AnalysisModule>();
+            builder.Services.AddSingleton<IReport, Report>();
             builder.Services.AddSingleton<IPredictionEngine, PredictionEngine>();
 
 

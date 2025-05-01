@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+using AnaysisModel.Interfaces;
+
 namespace AnaysisModel.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly AnalysisService _analysisService;
+        private readonly IAnalysisService _analysisService;
+        public IReport Report { get; private set; }
 
-        public IndexModel(AnalysisService analysisService)
-        {
-            _analysisService = analysisService;
-        }
+
 
         [BindProperty]
         public float Cost { get; set; }
@@ -21,7 +21,11 @@ namespace AnaysisModel.Pages
         [BindProperty]
         public float ROI { get; set; }
 
-        public Report Report { get; private set; }
+        public IndexModel(IAnalysisService analysisService, IReport report)
+        {
+            _analysisService = analysisService;
+            Report = report;
+        }
 
         public void OnPost()
         {

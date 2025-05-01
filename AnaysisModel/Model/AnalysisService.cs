@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System;
-namespace AnaysisModel
+using AnaysisModel.Interfaces;
+namespace AnaysisModel.Model
 {
-    public class AnalysisService
+    public class AnalysisService : IAnalysisService
     {
         private readonly IAnalysisModule _analysisModule;
         private readonly IPredictionEngine _predictionEngine;

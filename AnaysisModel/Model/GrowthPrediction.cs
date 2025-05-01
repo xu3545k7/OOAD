@@ -1,6 +1,6 @@
 using System;
 
-namespace AnaysisModel
+namespace AnaysisModel.Model
 {
 
     public class GrowthPrediction

@@ -1,4 +1,5 @@
-namespace AnaysisModel
+using AnaysisModel.Model;
+namespace AnaysisModel.Interfaces
 {
     public interface IAnalysisModule
     {

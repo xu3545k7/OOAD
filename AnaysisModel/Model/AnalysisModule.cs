@@ -1,7 +1,8 @@
 using System;
 using System.Drawing;
+using AnaysisModel.Interfaces;
 
-namespace AnaysisModel
+namespace AnaysisModel.Model
 {
     public class AnalysisModule : IAnalysisModule
     {

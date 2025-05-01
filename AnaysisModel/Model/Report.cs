@@ -1,13 +1,14 @@
 using System.Collections.Generic;
+using AnaysisModel.Interfaces;
 
-namespace AnaysisModel
+namespace AnaysisModel.Model
 {
-    public class Report
+    public class Report : IReport
     {
         public List<Strategy> Strategies { get; set; }
         public List<GrowthPrediction> GrowthPredictions { get; set; }
         public List<ROIPrediction> ROIPredictions { get; set; }
-        public String additional_requirement{ get; set; }
+        public String additional_requirement { get; set; }
 
         public void AddUserSelectedStrategy(int strategyId, float cost, int headcount, float roi)
         {
@@ -17,10 +18,17 @@ namespace AnaysisModel
                 selectedStrategy.AddHistoricalData(cost, headcount, roi);
             }
         }
-        
+
         public string GenerateSummary()
         {
+
             var summary = "Analysis Summary:\n";
+
+            if (Strategies == null || Strategies.Count == 0)
+            {
+                return "No strategies available.";
+            }
+
             for (int i = 0; i < Strategies.Count; i++)
             {
                 summary += $"{Strategies[i].GetDetails()}\n" +
