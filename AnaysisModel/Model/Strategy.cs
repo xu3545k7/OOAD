@@ -1,6 +1,7 @@
+using AnaysisModel.Interfaces;
 namespace AnaysisModel.Model
 {
-    public class Strategy
+    public class Strategy : IStrategy
     {
         public int Id { get; set; }
         public string Description { get; set; }

@@ -1,5 +1,5 @@
 {
-    "dotnet.defaultSolution": "AnaysisModelApplication.sln",
+    "dotnet.defaultSolution": "AccountManageSystems.sln",
     "files.associations": {
         "*.cs": "csharp",
         "*.csproj": "xml"

@@ -25,7 +25,17 @@
     </div>
     <button type="submit">Analyze</button>
 </form>
-
+<form method="get" action="">
+    <div>
+        <label for="current_strategy">Current Strategy:</label>
+        <select id="current_strategy" name="current_strategy">
+            <option value="strategy1">IncreaseMarketingBudget</option>
+            <option value="strategy2">OptimizeOperations</option>
+            <option value="strategy3">With Additional Requirement</option>
+        </select>
+    </div>
+    <button type="submit">Select</button>
+</form>
 @if (Model.Report != null)
 {
     <h2>Analysis Result</h2>

@@ -26,28 +26,29 @@ namespace AnaysisModel.Model
             // 根據策略計算成長潛力百分比
             float cost = historicalCost[historicalCost.Count - 1];
             int headcount = historicalheadcount[historicalheadcount.Count - 1];
-
+            float costImpact = cost;
+            int headcountImpact = headcount;
 
 
             if (strategy.Description == "Increase Marketing Budget")
             {
                 // 假設增加市場預算，cost 的影響較大
-                float costImpact = predictionEngine.GrowthModel(historicalCost);
-                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
-                percentage = CalculateImpact(cost, headcount, costImpact, headcountImpact, 0.001f, 0.5f);
+                costImpact = predictionEngine.GrowthModel(historicalCost);
+                headcountImpact = headcount;
+                percentage = CalculateImpact(cost, headcount, costImpact, headcountImpact, 0.001f, 0.7f);
             }
             else if (strategy.Description == "Optimize Operations")
             {
                 // 假設優化運營，cost 的影響較小
-                float costImpact = predictionEngine.GrowthModel(historicalCost);
-                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
-                percentage = CalculateImpact(cost, headcount, costImpact, headcountImpact, 0.0005f, 0.7f);
+                costImpact = cost;
+                headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
+                percentage = CalculateImpact(cost, headcount, costImpact, headcountImpact, 0.001f, 0.9f);
             }
             else if (strategy.Description == "With Additional Requirement")
-            {
-                float costImpact = predictionEngine.GrowthModel(historicalCost);
-                int headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
-                percentage = CalculateImpact(cost, headcount, costImpact, headcountImpact, 0.002f, 0.6f);
+            {   // 假設有額外需求，cost 和 headcount 的影響都較大
+                costImpact = predictionEngine.GrowthModel(historicalCost);
+                headcountImpact = predictionEngine.GrowthIntegerModel(historicalheadcount);
+                percentage = CalculateImpact(costImpact, headcountImpact, costImpact, headcountImpact, 0.001f, 0.9f);
             }
             else
             {
@@ -57,13 +58,18 @@ namespace AnaysisModel.Model
 
             return new GrowthPrediction
             {
+                cost = costImpact,
+                headcount = headcountImpact,
                 Percentage = percentage
             };
         }
-
         private float CalculateImpact(float cost, int headcount, float costImpact, int headcountImpact, float costWeight, float headcountWeight)
         {
-            return (cost - costImpact) * costWeight + (headcountImpact - headcount) * headcountWeight;
+            // 非線性效應
+            float costPenalty = costWeight * (float)Math.Log(1 + Math.Abs(costImpact - cost)) * 100;
+            float headcountBoost = headcountWeight * (float)Math.Sqrt(headcountImpact - headcount) * 100;
+
+            return costPenalty + headcountBoost;
         }
 
 

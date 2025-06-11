@@ -11,7 +11,6 @@ namespace AnaysisModel.Pages
         public IReport Report { get; private set; }
 
 
-
         [BindProperty]
         public float Cost { get; set; }
 
@@ -20,6 +19,10 @@ namespace AnaysisModel.Pages
 
         [BindProperty]
         public float ROI { get; set; }
+
+        [BindProperty]
+        public string AdditionalRequirement { get; set; }
+
 
         public IndexModel(IAnalysisService analysisService, IReport report)
         {
@@ -31,5 +34,7 @@ namespace AnaysisModel.Pages
         {
             Report = _analysisService.AnalyzeStrategies(Cost, Headcount, ROI, "");
         }
+
+
     }
 }
